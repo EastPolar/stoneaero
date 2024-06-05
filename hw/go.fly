@@ -1,51 +1,56 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_go@fly_1, server: hk.lianjianode.cc, port: 21033, type: vmess, uuid: 64d9966a-b534-4a75-8f8d-23472cb4189b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hongkong, ws-headers: {Host: hk1.luodi.xyz}, udp: true}
-  - {name: CN_go@fly_2, server: sg.lianjianode.cc, port: 21020, type: vmess, uuid: 64d9966a-b534-4a75-8f8d-23472cb4189b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /singapore, ws-headers: {Host: sg1.luodi.xyz}, udp: true}
-  - {name: CN_go@fly_3, server: jp.lianjianode.cc, port: 21012, type: vmess, uuid: 64d9966a-b534-4a75-8f8d-23472cb4189b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japan, ws-headers: {Host: jp1.luodi.xyz}, udp: true}
-  - {name: CN_go@fly_4, server: 183.232.170.47, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_5, server: hk.lianjianode.cc, port: 21030, type: vmess, uuid: 64d9966a-b534-4a75-8f8d-23472cb4189b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hongkong, ws-headers: {Host: hk1.luodi.xyz}, udp: true}
-  - {name: CN_go@fly_6, server: jp.lianjianode.cc, port: 21010, type: vmess, uuid: 64d9966a-b534-4a75-8f8d-23472cb4189b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japan, ws-headers: {Host: jp1.luodi.xyz}, udp: true}
-  - {name: CN_go@fly_7, server: 183.232.170.47, port: 15604, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_8, server: 183.232.170.47, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_9, server: sg.lianjianode.cc, port: 21021, type: vmess, uuid: 64d9966a-b534-4a75-8f8d-23472cb4189b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /singapore, ws-headers: {Host: sg1.luodi.xyz}, udp: true}
-  - {name: AL_go@fly_10, server: 109.104.153.69, port: 80, type: vmess, uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_22, server: 183.232.199.61, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_25, server: 183.232.199.61, port: 15607, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB_go@fly_30, server: 18.175.36.39, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: US_go@fly_31, server: 104.19.45.137, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: onea.flha.ru}, udp: true}
-  - {name: KR_go@fly_36, server: 180.229.248.156, port: 30998, type: trojan, password: moist, skip-cert-verify: true, udp: true}
-  - {name: US_go@fly_37, server: 104.25.8.78, port: 2082, type: vmess, uuid: ef6de0e7-9cc5-36a4-8574-b82f7aaa14e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dabai.in104.25.8.78, ws-headers: {Host: 100-100-17-490.db-link01.top}, udp: true}
-  - {name: US_go@fly_38, server: kz-v2ray.ipracevpn.com, port: 2083, type: vmess, uuid: 2595193e-3b5e-437e-8998-7be6dbfbed71, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: IE_go@fly_39, server: 54.217.214.190, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_41, server: 183.232.199.28, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_go@fly_44, server: 194.26.232.172, port: 59622, type: vmess, uuid: 6dcdd314-2997-48a1-b4cc-f3d281482dae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_49, server: 183.232.170.47, port: 40096, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_go@fly_50, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: onea.flha.ru}, udp: true}
-  - {name: CN_go@fly_52, server: 183.232.199.28, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_53, server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_54, server: 183.232.199.61, port: 15604, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_go@fly_56, server: 13.39.230.43, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_58, server: 183.232.199.28, port: 43002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_go@fly_61, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: onea.flha.ru}, udp: true}
-  - {name: US_go@fly_62, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 3b99fe7d-a3e5-46c2-adee-7c9a8e40eb09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/QXjZG5u4F2, ws-headers: {Host: us3AJ8biuQx.fzbqfrse.xyz}, udp: true}
-  - {name: GB_go@fly_63, server: 51.143.145.42, port: 25611, type: ss, cipher: chacha20-ietf-poly1305, password: fzUvYffEbpB7e9yHG6ATGK, udp: true}
+  - {name: CN_go@fly_1, server: 183.232.170.47, port: 15604, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_2, server: sui.forlive.live, port: 32460, type: vmess, uuid: 6e6bd87c-eca6-48fd-9337-c4f8d075622d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: SG_go@fly_3, server: sg2-v2ray.ipracevpn.com, port: 2083, type: vmess, uuid: 7cc6a250-f767-4d4b-9421-03b1bbf23f88, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_4, server: 183.232.170.47, port: 15610, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_5, server: 183.232.199.28, port: 15610, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_7, server: 183.232.199.28, port: 15610, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_8, server: 183.232.170.47, port: 15610, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_9, server: 183.232.199.28, port: 30002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_10, server: sui.forlive.live, port: 32460, type: vmess, uuid: 6e6bd87c-eca6-48fd-9337-c4f8d075622d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: CN_go@fly_11, server: 183.232.170.47, port: 15604, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_12, server: 183.232.170.47, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_13, server: 183.232.199.28, port: 15610, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_15, server: 183.232.170.47, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_16, server: 183.232.199.28, port: 30002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_17, server: 183.232.170.47, port: 40096, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_19, server: 183.232.170.47, port: 40096, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_20, server: 183.232.170.47, port: 40096, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_21, server: 183.232.142.179, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_go@fly_24, server: ca-v2ray.ipracevpn.com, port: 443, type: vmess, uuid: e3ef2387-33aa-4c0f-86b5-008ee3bcb945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_go@fly_27, server: gobchang.koreanbbq.link, port: 28333, type: trojan, password: SREqCp9nAFy38S4xK03YYRzOlxK03YYRzOlcBlDea3OXD5pgZyaZ2eN8j6CITw5pgZyaZ, sni: gobchang.koreanbbq.link, skip-cert-verify: true, udp: true}
+  - {name: US_go@fly_29, server: gobchang.koreanbbq.link, port: 28333, type: trojan, password: SREqCp9nAFy38S4xK03YYRzOlxK03YYRzOlcBlDea3OXD5pgZyaZ2eN8j6CITw5pgZyaZ, sni: gobchang.koreanbbq.link, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_32, server: 183.232.199.61, port: 15607, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_33, server: 183.232.199.61, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_35, server: 183.232.199.61, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_44, server: 183.232.142.179, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_46, server: 183.232.199.28, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_go@fly_48, server: 158.51.111.114, port: 32365, type: vmess, uuid: f956a5d9-1f30-4f89-adc8-4286f4a3eb16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [158.51.111.114]}}, udp: true}
+  - {name: CN_go@fly_50, server: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top, port: 38997, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_52, server: 183.232.199.28, port: 43002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_62, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}, udp: true}
+  - {name: FR_go@fly_64, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: CN_go@fly_65, server: 183.232.199.28, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_go@fly_67, server: us03.kingeldwin.online, port: 80, type: vmess, uuid: 9223aef7-642d-4047-8d3a-dd2bcb9e2e69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us03.kingeldwin.online}, udp: true}
-  - {name: US_go@fly_71, server: us04.kingeldwin.online, port: 80, type: vmess, uuid: 9223aef7-642d-4047-8d3a-dd2bcb9e2e69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us04.kingeldwin.online}, udp: true}
-  - {name: US_go@fly_73, server: 104.19.47.226, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: oiictw.yydsii.com}, udp: true}
-  - {name: CN_go@fly_76, server: 9898.fz-6-0-kcet8y0fd-so04.my777999.top, port: 37996, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_82, server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_84, server: deepf.hjkdsak2.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 99301d55-a41f-4919-986b-1435996533aa, udp: true}
-  - {name: CN_go@fly_86, server: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top, port: 38997, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_90, server: 183.232.199.61, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_91, server: 879xhl1.hsspr5bu1-tw02.my777999.top, port: 34998, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_go@fly_95, server: 183.232.170.47, port: 15610, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_69, server: 183.232.199.28, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_70, server: 183.232.199.28, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SE_go@fly_73, server: 185.146.173.92, port: 80, type: vmess, uuid: 3a71b42c-66d2-44ad-8a80-668d4f4339ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE, ws-headers: {Host: Nl2.vmess.site.}, udp: true}
+  - {name: CN_go@fly_77, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}, udp: true}
+  - {name: CN_go@fly_83, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}, udp: true}
+  - {name: CN_go@fly_86, server: 183.232.142.179, port: 21003, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_89, server: 183.232.199.28, port: 43002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LV_go@fly_93, server: ua-full.privateip.net, port: 443, type: vmess, uuid: bc14b176-c672-4f20-b73c-9fb882224ded, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /RACEVPN, ws-headers: {Host: ua-full.privateip.net}, udp: true}
+  - {name: CN_go@fly_94, server: 183.232.199.61, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: PL_go@fly_96, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CN_go@fly_98, server: 183.232.199.61, port: 15604, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_101, server: 183.232.199.61, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_109, server: 183.232.199.28, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_go@fly_126, server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -54,45 +59,50 @@ proxy-groups:
       - 🎯 全球直连
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -100,45 +110,50 @@ proxy-groups:
     proxies:
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -147,45 +162,50 @@ proxy-groups:
       - 🎯 全球直连
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -206,45 +226,50 @@ proxy-groups:
       - 🎯 全球直连
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -257,45 +282,50 @@ proxy-groups:
       - 🔰 节点选择
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: 📲 电报信息
     type: select
     proxies:
@@ -303,45 +333,50 @@ proxy-groups:
       - 🎯 全球直连
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -350,45 +385,50 @@ proxy-groups:
       - ♻️ 自动选择
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -406,45 +446,50 @@ proxy-groups:
       - ♻️ 自动选择
       - CN_go@fly_1
       - CN_go@fly_2
-      - CN_go@fly_3
+      - SG_go@fly_3
       - CN_go@fly_4
       - CN_go@fly_5
-      - CN_go@fly_6
       - CN_go@fly_7
       - CN_go@fly_8
       - CN_go@fly_9
-      - AL_go@fly_10
-      - CN_go@fly_22
-      - CN_go@fly_25
-      - GB_go@fly_30
-      - US_go@fly_31
-      - KR_go@fly_36
-      - US_go@fly_37
-      - US_go@fly_38
-      - IE_go@fly_39
-      - CN_go@fly_41
-      - NL_go@fly_44
-      - CN_go@fly_49
-      - US_go@fly_50
+      - CN_go@fly_10
+      - CN_go@fly_11
+      - CN_go@fly_12
+      - CN_go@fly_13
+      - CN_go@fly_15
+      - CN_go@fly_16
+      - CN_go@fly_17
+      - CN_go@fly_19
+      - CN_go@fly_20
+      - CN_go@fly_21
+      - CA_go@fly_24
+      - US_go@fly_27
+      - US_go@fly_29
+      - CN_go@fly_32
+      - CN_go@fly_33
+      - CN_go@fly_35
+      - CN_go@fly_44
+      - CN_go@fly_46
+      - US_go@fly_48
+      - CN_go@fly_50
       - CN_go@fly_52
-      - CN_go@fly_53
-      - CN_go@fly_54
-      - FR_go@fly_56
-      - CN_go@fly_58
-      - US_go@fly_61
-      - US_go@fly_62
-      - GB_go@fly_63
+      - CN_go@fly_62
+      - FR_go@fly_64
       - CN_go@fly_65
-      - US_go@fly_67
-      - US_go@fly_71
-      - US_go@fly_73
-      - CN_go@fly_76
-      - CN_go@fly_82
-      - CN_go@fly_84
+      - CN_go@fly_69
+      - CN_go@fly_70
+      - SE_go@fly_73
+      - CN_go@fly_77
+      - CN_go@fly_83
       - CN_go@fly_86
-      - CN_go@fly_90
-      - CN_go@fly_91
-      - CN_go@fly_95
+      - CN_go@fly_89
+      - LV_go@fly_93
+      - CN_go@fly_94
+      - PL_go@fly_96
+      - CN_go@fly_98
+      - CN_go@fly_101
+      - CN_go@fly_109
+      - CN_go@fly_126
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
